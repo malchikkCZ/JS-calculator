@@ -10,26 +10,26 @@
 <body>
     <div class="container">
         <div class="calculator">
-            <div id="actual">
-                <span id="oper"></span>
+            <div class="actual">
+                <span id="operation"></span>
             </div>
             <div id="display">
                 <span id="result">0</span>
             </div>
             <div class="buttons">
                 <div class="functions">
-                    <button>AC</button>
+                    <button id="ac">AC</button>
                     <button>+/−</button>
                     <button>%</button>
                 </div>
-                <div class="operators">
-                    <button>÷</button>
-                    <button>×</button>
-                    <button>−</button>
-                    <button>+</button>
-                    <button>=</button>
+                <div id="operators">
+                    <button name="divide">÷</button>
+                    <button name="multiply">×</button>
+                    <button name="subtract">−</button>
+                    <button name="add">+</button>
+                    <button name="result">=</button>
                 </div>
-                <div class="numbers">
+                <div id="numbers">
                     <button>7</button>
                     <button>8</button>
                     <button>9</button>
@@ -40,11 +40,12 @@
                     <button>2</button>
                     <button>3</button>
                     <button class="zero">0</button>
-                    <button>,</button>
+                    <button name="coma">,</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

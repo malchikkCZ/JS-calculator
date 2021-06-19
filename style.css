@@ -22,13 +22,15 @@ body {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-#actual {
+.actual {
     color: white;
     width: 100%;
     height: 10px;
-    padding-left: 100px;
-    font-family: monospace;
+    margin-left: 100px;
+    padding: 1px;
     font-size: 12px;
+    font-family: monospace;
+    text-transform: uppercase;
 }
 
 #display {
@@ -54,25 +56,25 @@ body {
     background-color: lightgray;
 }
 
-.operators {
+#operators {
     grid-column: 2;
     grid-row: 1 / span 2;
     display: flex;
     flex-direction: column;
 }
 
-.operators button {
+#operators button {
     background-color: darkorange;
     color: white;
 }
 
-.numbers {
+#numbers {
     grid-column: 1;
     display: grid;
     grid-template-columns: repeat(3, auto);
 }
 
-.numbers button {
+#numbers button {
     background-color: darkslategray;
     color: white;
 }
