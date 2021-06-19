@@ -91,7 +91,6 @@ function calculate() {
     } else if (operation.innerHTML === "divide") {
         if (number == 0) {
             result = "DIV ZERO ERR";
-            cache = [];
         } else {
             result = result / number;
         }
@@ -99,6 +98,7 @@ function calculate() {
         result = number;
     }
     lcd.innerHTML = result;
+    cache = [];
     clearAll();
 }
 
